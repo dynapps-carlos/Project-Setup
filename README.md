@@ -7,7 +7,7 @@ This guide outlines the step-by-step process to initialize a project following D
 ## 1. Clone the Customer Repository
 
 ```bash
-git clone git@github.com:dootixsa/3epis.git 3epis15
+git clone git@github.com:dynapps-sa/3epis.git 3epis15
 cd 3epis15/
 git checkout -b 15.0-dynapps
 ```
