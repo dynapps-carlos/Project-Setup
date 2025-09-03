@@ -108,7 +108,7 @@ git checkout <commit_hash>
 * In `requirements-dev.txt`, add:
 
 ```txt
-cython==3.0a9
+cython==3.0.11
 ```
 
 ## 5. Commit Initial State
