@@ -140,6 +140,53 @@ uv pip install -r requirements-dev.txt
 ./parts/odoo/odoo/odoo-bin -c odoo.cfg -d 3epis15 -i xx_all
 ```
 
+## 9. Cursor AI configuration files
+
+Launch.json:
+
+```json
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Odoo (dev)",
+        "type": "debugpy",
+        "request": "launch",
+  
+        // odoo-bin
+        "program": "${workspaceFolder}/parts/odoo/odoo/odoo-bin",
+  
+        // Odoo parameters
+        "args": [
+          "-c", "odoo.cfg",
+          "-d", "dootix17_internal",
+          "-u", "dynapps_developments",
+        ],
+  
+        "cwd": "${workspaceFolder}",
+        "console": "integratedTerminal",
+        "stopOnEntry": false,
+        "justMyCode": false
+      }
+    ]
+  }
+  
+```
+
+Settings.json:
+
+```json
+{
+    // Equivalent to "Set as Source Root" for Odoo
+    "python.analysis.extraPaths": [
+      "${workspaceFolder}/parts/odoo/odoo",
+      "${workspaceFolder}/parts/odoo/enterprise"
+    ],
+    "python.languageServer": "None",
+  }
+  
+```
+
 ---
 
 ## 🛠 Troubleshooting
