@@ -161,6 +161,7 @@ Launch.json:
           "-c", "odoo.cfg",
           "-d", "dootix17_internal",
           "-u", "dynapps_developments",
+          "--limit-memory-hard=0"
         ],
   
         "cwd": "${workspaceFolder}",
